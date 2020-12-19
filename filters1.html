@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <title>Template Filters</title>
+</head>
+<body>
+    <h2>Filter Page</h2>
+    <p>Length of list is - {{ list | length }}</p>
+    <p>Sum of {{x}} and 2 is {{x | add:2 }}</p>
+    <p>Wordcount of "{{title}}" is {{ title | wordcount }} and Without Space {{title}} is {{ title| cut:" "}} </p>
+    <p>Lower case "{{title}}" is "{{title | lower}}" and uppercase of {{title}} is "{{title | upper }}" and title case is "{{ title | title }}"</p>
+    <p>List joined by->   {{ list | join:" *** " }}</p>
+    <p>First value of the {{list}} is {{list | first}} and last value is {{list|last}}</p> 
+    <p> Make list out of "{{word}}"  is {{word | make_list }} </p>
+    <p>List slicing {{list | slice:":4" }}</p>
+    <p> Date and time is  {{ dt | date:"D d M Y" }} </p>
+
+
+</body>
+</html>
