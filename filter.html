@@ -1,0 +1,9 @@
+Length of list is - {{ list | length }}<br>
+Sum of {{x}} and 2 is {{x | add:2 }}<br>
+Wordcount of "{{title}}" is {{ title | wordcount }} and Without Space {{title}} is {{ title| cut:" "}}  <br>
+Lower case "{{title}}" is "{{title | lower}}" and uppercase of {{title}} is "{{title | upper }}" and title case is "{{ title | title }}"<br>
+List joined by-> {{ list | join:" *** " }} <br>
+First value of the {{list}} is {{list | first}} and last value is {{list|last}} <br>
+Make list out of "{{word}}" is {{word | make_list }} <br>
+List slicing {{list | slice:":4" }}<br>
+Date and time is {{ dt | date:"D d M Y" }}<br> 

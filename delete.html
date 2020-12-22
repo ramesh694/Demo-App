@@ -1,0 +1,16 @@
+{% extends 'blog/main.html' %}
+
+{% block content %}
+   <div class="main">
+    <form method="POST">
+    {% csrf_token %}
+    <br>
+    <p class="h2">Are you want to delete this blog?</p> 
+    <input type="submit" class="btn btn-success" value="Yes" /> 
+    <a href="/" class="btn btn-info" >Cancel</a> 
+    </form>
+    <br><br>
+    <a href="{% url 'display' %}" class="btn btn-success">See all Blogs</a><br>
+    <a href="{% url 'create' %}" class="btn btn-info"><b>Create New Blog<b></a>
+
+{% endblock %}

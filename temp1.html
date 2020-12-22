@@ -1,0 +1,18 @@
+For loops in Array
+{% for i in list %} 
+{{ i }}
+{% endfor %} 
+<br>
+Reverse a list
+{% for i in list reversed %} 
+{{ i }}
+{% endfor %} 
+<br>
+For loop on dictionary
+{% for k,v in bio.items %} 
+{{ k }} - {{ v }}
+{% endfor %}
+<br> 
+if else in templates
+{% if title %} Title is : - {{ title }} {% else %} Title is not defined {% endif %}<br> 
+{% if head1 or head2 %} Head1 is {{head1}} and Head2 is {{head2}} {% endif %} <br>
